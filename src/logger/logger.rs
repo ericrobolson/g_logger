@@ -35,7 +35,7 @@ pub struct Logger {
 }
 
 impl Logger {
-    /// Initializes the logger
+    /// Loads a replay
     pub fn load_replay<'a>(&mut self, replay_path: &'a str) {
         self.replay_current_duration = Duration::from_micros(0);
         self.replay_idx = 0;
